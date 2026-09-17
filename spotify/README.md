@@ -1,73 +1,83 @@
-# SoundCluster AI: Spotify Music Intelligence & Recommendation System
+# Spotify Music Intelligence & Recommendation System
 
-## Overview
-SoundCluster AI is an end-to-end unsupervised machine learning portfolio project designed to perform genre segmentation, track clustering, and intelligent music recommendations using Spotify audio features.
+An AI-powered music recommendation system built with Python, Machine Learning, and Streamlit. The project analyzes Spotify audio features, discovers patterns in music, and recommends songs based on similarity.
 
-This project was built from scratch and includes comprehensive data cleaning, Exploratory Data Analysis (EDA), K-Means clustering, PCA visualization, and a content-based recommendation engine. The entire pipeline is bundled with a polished Streamlit dashboard.
+## About the Project
 
-## Internship Skill Mapping
-* **Python** → complete project implementation, modular architecture
-* **Pandas** → data cleaning, validation, and feature engineering
-* **NumPy** → numerical computation and similarity matrix operations
-* **Matplotlib** → static and exploratory visualizations
-* **Seaborn** → statistical correlation heatmaps and distribution plots
-* **Scikit-learn** → standardization, PCA, K-Means clustering, metrics, cosine similarity
-* **Statistics** → EDA, outlier handling, and correlation analysis
-* **Machine Learning** → determining optimal K, cluster profiling
-* **Unsupervised Learning** → feature-based track segmentation
-* **AI Recommendation** → content-based, cluster-aware engine
+This project explores how machine learning can be used to understand music and create personalized listening experiences. It uses Spotify song data and audio features to identify similar tracks and generate recommendations.
 
-## Architecture
+Developed as a major project for the Corizo internship program.
+
+## Features
+
+* Music recommendation based on song similarity.
+* Spotify audio feature analysis.
+* Machine learning-based music clustering.
+* Interactive Streamlit web application.
+* Data visualization and exploration of music characteristics.
+
+## Technologies Used
+
+* Python
+* Pandas and NumPy
+* Scikit-learn
+* Streamlit
+* Jupyter Notebook
+* Spotify dataset
+
+## Project Structure
+
 ```text
-RAW CSV
-   ↓
-Data Validation & Cleaning
-   ↓
-Feature Engineering & Selection
-   ↓
-StandardScaler
-   ↓
-K-Means Clustering
-   ↓
-Cluster Profiling & PCA
-   ↓
-Similarity Engine
-   ↓
-Recommendation Ranking
-   ↓
-Streamlit Dashboard
+spotify/
+├── app/
+│   └── app.py
+├── data/
+│   ├── raw/
+│   └── processed/
+├── models/
+├── notebooks/
+├── requirements.txt
+├── run_project.py
+└── README.md
 ```
 
-## Setup & Installation
+## Getting Started
 
-1. Create a virtual environment (optional but recommended)
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Place `spotify_dataset.csv` in `data/raw/`
+### 1. Clone the repository
 
-## Usage
-
-### 1. Run the Backend Pipeline
-You can run the full machine learning pipeline (cleaning, EDA, training, evaluation, saving models):
 ```bash
-python run_project.py --all
+git clone https://github.com/Kanishk3443/spotify.git
+cd spotify
 ```
-*Note: Depending on dataset size, PCA and K-Means training may take a minute.*
 
-### 2. Launch the Streamlit Dashboard
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3. Run the application
+
 ```bash
 streamlit run app/app.py
 ```
 
-## Features
-- **Data Explorer**: Filter tracks by genre and popularity.
-- **Cluster Profiling**: Track segmentation based on pure audio features (danceability, energy, tempo, etc.) without cheating with genre labels.
-- **Recommendation Engine**: Find mathematically similar tracks based on audio fingerprint, weighted by popularity and cluster alignment.
-- **Explanations**: The recommendation system explains why a track was recommended.
+If the project requires preprocessing or model training, follow the existing project instructions before launching the application.
 
-## Future Scope
-- Spotify API Integration for real-time recommendations.
-- Collaborative filtering using user listening history.
-- Deep learning embeddings.
+## Author
+
+**Kanishk M**
+
+GitHub: [Kanishk3443](https://github.com/Kanishk3443)
+
+Role: Student
+
+## Credits
+
+This project is based on an existing Spotify music recommendation project. Original source and contributors are credited in the repository history and project documentation.
+
+Further development and customization are being carried out as part of the Corizo major project.
+
+## License
+
+Refer to the original project's license before redistributing or modifying the source code.
