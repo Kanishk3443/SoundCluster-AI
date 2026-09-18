@@ -6,8 +6,6 @@
 
 The project combines **K-Means clustering, PCA-based visualization, and content-based recommendation** to explore relationships between different music tracks.
 
-Developed as a **Corizo Major Project**.
-
 ---
 
 ## 📌 About the Project
@@ -288,20 +286,6 @@ This project provided practical experience in:
 Student | Computer Science Engineering
 
 GitHub: [Kanishk3443](https://github.com/Kanishk3443)
-
----
-
-## 🎓 Project Context
-
-SoundCluster AI was developed as part of my **Corizo Major Project** to apply machine learning and data analysis concepts to a practical music discovery and recommendation problem.
-
----
-
-## 🤝 Credits
-
-This project was developed using an existing music recommendation project shared with permission from the original developer.
-
-The project has been studied, configured, and further developed as part of the Corizo Major Project.
 
 ---
 
